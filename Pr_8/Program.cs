@@ -71,12 +71,12 @@ namespace Pr_8
                     Console.WriteLine("Чисел, больших 5 по модулю, не найдено.");
                 }
                 Console.WriteLine("Продолжаем? (да/нет)");
+                Console.WriteLine("Нажмите любую клавишу для продолжения(кроме Enter)");
                 string w = Console.ReadLine();
                 switch (w)
                 {
                     case "1":
                         Console.WriteLine("Новый расчет:");
-                        Console.WriteLine("Нажмите любую клавишу для продолжения");
                         Console.ReadKey();
                         Console.Clear();
                         break;
@@ -85,9 +85,8 @@ namespace Pr_8
                         break;
                     default:
                         Console.WriteLine("Неизвестная команда");
-                        Console.WriteLine("Нажмите любую клавишу для продолжения");
-                        Console.ReadKey();
                         Console.Clear();
+                        Console.ReadKey();
                         break;
                 }
             }
